@@ -7,7 +7,6 @@ TABLE OF CONTENT
  * Screenshots
  * Tech/Framework Used
  * Features
- * Usage
  * Credits
 # Introduction
 
@@ -47,9 +46,30 @@ After executing ```build_dataset.py``` project directory will lool similar to th
 I got accuracy of ```96.91%``` on training data and ```96.65%``` on validation data after running model for 50 epochs.
 
 ![](images/malaria_model.PNG)
+
+Performance Matrix
+
+![](images/malaria_model_report.PNG)
+
+![](images/plots.png)
  
 ## Features
 
-## Usage
+The model was trained for a total of 50 epochs.
+
+Each epoch takes approx 52s on Goggle Colab GPU enabled notebook.
+Overall, the entire training process only took approx 45 minutes which is pretty good because we are getting almost 97% accuracy at end of 50th epoch.
+
+There are a number of benefits to using the ResNet-based model we trained here today for medical image analysis.
+
+ - Our model is a complete end-to-end malaria classification system.
+ - Unlike NIH’s approach which leverages a multiple step process of (1.) feature extraction from multiple models and (2.) classification, we instead can utilize only a single, compact model and obtain comparable results.
+ - Our final model is only 17.5 MB which is very handy.
+ - Our model took only 45 minutes to train while NIH’s model took ~24 hours.
+ - Our model is faster in terms of both (1.) forward-pass inference time and (2.) significantly fewer parameters and memory/hardware requirements.
+ - Our model requires only 64×64 input images and obtains near identical accuracy.
 
 ## Credits
+
+ - [ResNet official publication](https://arxiv.org/abs/1512.03385)
+ - [PyImageSearch](https://www.pyimagesearch.com/)
