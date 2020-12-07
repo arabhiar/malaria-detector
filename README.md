@@ -4,7 +4,6 @@ TABLE OF CONTENT
  * Introduction
  * Requirements
  * Preparing Dataset
- * Screenshots
  * Tech/Framework Used
  * Features
  * Credits
