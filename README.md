@@ -21,12 +21,33 @@ Project directory should look like this-
 
 ![](images/directory_1.PNG)
 
+Image dataset look like this-
+
+![](images/our_dataset.jpg)
+
 ## Preparing Dataset
 
-## Screenshots
+Since our dataset doesn't have pre split data for training, testing and validation, so we need to do it ourselvers.
+To create our data split we are going to use ```build_dataset.py``` script.
+  - Grab the paths to all our example images and randomly shuffle them.
+  - Split the images paths into the training, validation, and testing.
+  - Create three new sub-directories in the ```malaria/``` directory, namely ```training/``` , ```validation/``` , and ```testing/```.
+  - Automatically copy the images into their corresponding directories.
+
+After executing ```build_dataset.py``` project directory will lool similar to this-
+![](images/directory_3.PNG)
 
 ## Tech/Framework Used
+ - Tensorflow
+ - Keras
+ - Google Colab(If you don't have GPU then you can use Colab Notebook)
 
+## Result/Performance
+
+I got accuracy of ```96.91%``` on training data and ```96.65%``` on validation data after running model for 50 epochs.
+
+![](images/malaria_model.PNG)
+ 
 ## Features
 
 ## Usage
