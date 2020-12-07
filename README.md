@@ -19,6 +19,8 @@ First of all, you need to download the image dataset using link ftp://lhcftp.nlm
 
 Project directory should look like this-
 
+![](images/directory_1.PNG)
+
 ## Preparing Dataset
 
 ## Screenshots
