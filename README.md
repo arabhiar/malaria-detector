@@ -46,7 +46,7 @@ I got accuracy of ```96.91%``` on training data and ```96.65%``` on validation d
 
 ![](images/malaria_model.PNG)
 
-Performance Matrix
+Performance Metrics
 
 ![](images/malaria_model_report.PNG)
 
